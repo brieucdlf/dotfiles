@@ -1,3 +1,6 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/home/.oh-my-zsh
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
@@ -20,4 +23,5 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_aliases

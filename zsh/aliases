@@ -2,7 +2,7 @@
 # Zsh aliases
 
 # Zsh
-alias confzsh="vim ~/.zshrc"
+alias confzsh="nvim ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 
 # Basic commands
@@ -11,15 +11,18 @@ alias la="ls -la"
 alias cl="clear"
 alias scmod="stat -f '%OLp'" # display chmod number
 
+# Ncmpcpp
+alias ncmpcpp="ncm"
+
 # Ubersicht
 alias confubersicht="cd ~/Library/Application\ Support/Übersicht/widgets/Pecan"
 
 # Tmux
-alias conftmux="vim ~/.tmux.conf"
+alias conftmux="nvim ~/.tmux.conf"
 alias sourcetmux="tmux source ~/.tmux.conf"
 
 # Nvim
-alias confnvim="vim ~/.config/nvim/init.vim"
+alias confnvim="nvim ~/.config/nvim/init.vim"
 
 # StartupFlow
 alias nrnd="nf run -e .env.local nodemon dev"
