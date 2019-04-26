@@ -105,6 +105,11 @@ nnoremap <leader><space> :nohlsearch<cr>
 " Toggle NerdTree
 nnoremap <leader>a :NERDTreeToggle<cr>
 
+" FZF
+if executable('fzf')
+    nnoremap <C-p> :FZF<cr>
+endif
+
 " read/write file when switching buffers
 set autowrite
 set autoread
