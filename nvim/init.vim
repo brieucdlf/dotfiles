@@ -3,6 +3,7 @@ let mapleader = ","
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
@@ -10,7 +11,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
@@ -107,9 +109,9 @@ nnoremap <leader>a :NERDTreeToggle<cr>
 
 " FZF
 if executable('fzf')
-    nnoremap <C-p> :FZF<cr>
+  " silent! nmap <C-p> :FZF<cr>
+  silent! nmap <C-p> :GFiles<cr>
 endif
-
 " read/write file when switching buffers
 set autowrite
 set autoread
